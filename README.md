@@ -62,6 +62,13 @@ MediaProjection**, no screen-capture permission dialog.
 dsh plugin --profile web add dsh-plugin-android-vscreen
 ```
 
+From a clone (works whether or not the npm release exists yet):
+
+```sh
+git clone https://github.com/guzhou079-arch/dsh-plugin-android-vscreen
+dsh plugin --profile web add link:./dsh-plugin-android-vscreen
+```
+
 Then ask the agent to run `android_vscreen_doctor`: it reports which transport is available and
 probes the device.
 
