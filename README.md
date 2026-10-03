@@ -58,11 +58,15 @@ MediaProjection**, no screen-capture permission dialog.
 
 ## Install
 
+From npm (once published) or straight from this repository — `dsh plugin` forwards to pnpm, so both
+specs work:
+
 ```sh
 dsh plugin --profile web add dsh-plugin-android-vscreen
+dsh plugin --profile web add github:guzhou079-arch/dsh-plugin-android-vscreen
 ```
 
-From a clone (works whether or not the npm release exists yet):
+Or from a clone you already have:
 
 ```sh
 git clone https://github.com/guzhou079-arch/dsh-plugin-android-vscreen
