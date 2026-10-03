@@ -1,0 +1,46 @@
+{
+  "name": "dsh-plugin-android-vscreen",
+  "version": "0.1.0",
+  "description": "Let a DeepSeek Harness agent drive an Android phone on a virtual display — it works in a second screen while your own screen stays untouched. · 让 AI 在安卓手机的「虚拟屏」上干活：手机照常用，互不打扰。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": [
+    "lib",
+    "assets",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "android",
+    "adb",
+    "virtual-display",
+    "automation",
+    "agent"
+  ],
+  "license": "LGPL-3.0-only",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guzhou079-arch/dsh-plugin-android-vscreen.git"
+  },
+  "homepage": "https://github.com/guzhou079-arch/dsh-plugin-android-vscreen#readme",
+  "bugs": {
+    "url": "https://github.com/guzhou079-arch/dsh-plugin-android-vscreen/issues"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": ">=0.1.0-rc.6"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

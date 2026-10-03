@@ -1,0 +1,18 @@
+# ============================================================================
+# dsh-plugin-android-vscreen —— DSH bundle patch
+#
+# 这是插件的"挂载声明"。dsh 启动时按 bundle 层栈叠加各插件 patch，
+# 本文件把本插件插入 profile 的配置树。
+#
+# 安装：
+#   dsh plugin --profile web add dsh-plugin-android-vscreen
+# 本地开发：
+#   dsh plugin --profile web add link:<本目录绝对路径>
+#
+# ⚠️ 新增条目必须写在 insert: 下面；直接写 `- id:` 是【改已有条目】，
+#    不存在的 id 会被静默忽略（踩过）。
+# ============================================================================
+
+- insert:
+    - id: android-vscreen
+      name: dsh-plugin-android-vscreen
